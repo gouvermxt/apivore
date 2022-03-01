@@ -27,8 +27,8 @@ Gem::Specification.new do |s|
   # Hack to support currently suported ruby versions
   # TODO: remove and explicitly require ruby 2.2.2 as min version in version 2 of apivore
   if RUBY_VERSION >= '2.2.2'
-    s.add_runtime_dependency 'actionpack', '>= 4', '< 6'
-    s.add_development_dependency 'activesupport', '>= 4', '< 6'
+    s.add_runtime_dependency 'actionpack', '~> 6'
+    s.add_development_dependency 'activesupport', '~> 6' 
   else
     s.add_runtime_dependency 'actionpack', '< 5'
     s.add_development_dependency 'activesupport', '< 5'
